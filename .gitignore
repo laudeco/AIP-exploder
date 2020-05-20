@@ -1,2 +1,3 @@
 *.aip
+conf.php
 vendor/
