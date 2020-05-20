@@ -1,0 +1,19 @@
+{
+    "name": "laudeco/aip-translator",
+    "type": "project",
+    "require": {
+        "sabre/xml": "^2.2",
+        "jms/serializer": "^3.6"
+    },
+    "authors": [
+        {
+            "name": "Laurent De Coninck",
+            "email": "lau.deconinck@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "OpenAip\\Aip\\": "src/"
+        }
+    }
+}
