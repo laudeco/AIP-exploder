@@ -15,6 +15,6 @@ $aip = $serializer->deserialize(file_get_contents($aipPath), \OpenAip\Aip\OpenAi
 foreach($aip->getAirspaces() as $airspaces){
     foreach($airspaces->getAirspaceByMaxFeet($highestAltitude)->groupByCategory() as $category => $categoryAirspaces){
         $serializedOpenAip = $serializer->serialize(new \OpenAip\Aip\OpenAip($aip->getVersion(), $aip->getFormat(), [$categoryAirspaces]), 'xml');
-        file_put_contents('./openAip_BE_'.strtolower($category).'.aip', $serializedOpenAip);
+        file_put_contents($outputFolder.'/openAip_BE_'.strtolower($category).'.aip', $serializedOpenAip);
     }
 }
