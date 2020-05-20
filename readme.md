@@ -9,14 +9,16 @@ You can also reject all area above 2500ft.
     ```
     $ composer install
     ```
-3. Put your _*.aip_ file at root.
-4. Adapt the run.php
-    ```
-    $ composer install
-    ```
+4. Define a config file
+    * Create a file _conf.php_ based on _conf.dist.php_
+    * edit the properties in it
+5. Run _run.php_
 
 ## To do's 
 
 * [] Add tests
 * [] Migrate to use the command line
 * [] Dynamic parameter
+
+## Comment
+Let me know if you have any comment.
